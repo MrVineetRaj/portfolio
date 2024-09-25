@@ -25,3 +25,15 @@ body {
     text-wrap: balance;
   }
 }
+
+.shadow-cover {
+  @apply shadow-[-0px_-0px_40px]  shadow-violet-500/70;
+}
+
+.shadow-bottom {
+  @apply shadow-[0px_40px_40px]  shadow-violet-500/70;
+}
+
+.section-container {
+  @apply pb-16 md:pb-32 w-[80%] lg:w-[60%]  flex flex-col items-center;
+}
