@@ -47,10 +47,10 @@ export async function POST(req: Request) {
       status: 500,
       body: { message: "Error sending mail" },
     });
-  } catch (e) {
+  } catch (e: any) {
     return NextResponse.json({
       status: 500,
-      message: "Error sending mail",
+      message: e.message,
     });
   }
 }

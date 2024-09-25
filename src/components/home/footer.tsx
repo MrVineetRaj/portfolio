@@ -2,7 +2,6 @@
 import React, { useState } from "react";
 import SectionHeading from "../shared/SectionHeading";
 import FormField from "../shared/FormField";
-import Link from "next/link";
 import ContactsDisplay from "../shared/ContactsDisplay";
 import toast from "react-hot-toast";
 

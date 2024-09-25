@@ -1,5 +1,5 @@
 "use client";
-import React, { act, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import SectionHeading from "../shared/SectionHeading";
 import { projects, projects_categories } from "@/lib/constants";
 import OptionPill from "../shared/OptionPill";

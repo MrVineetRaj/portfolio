@@ -7,14 +7,18 @@ import ExperienceCard from "../shared/ExperienceCard";
 
 const Experience = () => {
   const [activeRole, setActiveRole] = useState<string>("FullStack Developer");
-  const [internshipToDisplay, setInternshipToDisplay] = useState([
+  const [internshipsToDisplay, setInternshipsToDisplay] = useState([
     internships[0],
   ]);
   const handleActiveOption = (role: string) => {
     setActiveRole(role);
-    const selectedInternship = internships.find(
+    const selectedInternshipsToBeDisplayed = internships.filter(
       (internship) => internship.role === role
     );
+
+    if (selectedInternshipsToBeDisplayed) {
+      setInternshipsToDisplay(selectedInternshipsToBeDisplayed);
+    }
   };
 
   return (
@@ -41,7 +45,7 @@ const Experience = () => {
           </div>
         </div>
         <div className="flex-[0.5] flex gap-4 flex-wrap justify-around h-full ">
-          {internshipToDisplay?.map((internship, index) => {
+          {internshipsToDisplay?.map((internship, index) => {
             return <ExperienceCard internship={internship} key={index} />;
           })}
         </div>

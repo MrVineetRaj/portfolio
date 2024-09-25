@@ -6,8 +6,7 @@ import Projects from "@/components/home/projects";
 import Skills from "@/components/home/skills";
 import MobileNav from "@/components/shared/MobileNav";
 import NavBar from "@/components/shared/NavBar";
-import { Spotlight } from "@/components/ui/Spotlight";
-import Image from "next/image";
+
 
 export default function Home() {
   return (

@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { PinContainer } from "../ui/3d-pin";
 import clsx from "clsx";
 
 const ProjectCard = ({

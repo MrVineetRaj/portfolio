@@ -1,11 +1,9 @@
 "use client";
-import { contacts, role } from "@/lib/constants";
+import { role } from "@/lib/constants";
 import React, { useEffect, useState } from "react";
 import ContactsDisplay from "../shared/ContactsDisplay";
 
 const HeroSection = () => {
-  const text = "Hello ! I am Vineet Raj";
-  const [activeRole, setActiveRole] = useState<string>("");
   const [displayText, setDisplayText] = useState("");
   useEffect(() => {
     let index = 0;
@@ -21,6 +19,7 @@ const HeroSection = () => {
         index = 0;
       }
     }, 200);
+    console.log(timer);
   }, []);
   return (
     <div className="py-4 md:py-20 lg:py-40 flex flex-col-reverse lg:flex-row gap-16 items-center justify-around w-[80vw] md:w-[60vw]">
